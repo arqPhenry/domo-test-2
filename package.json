@@ -1,0 +1,35 @@
+{
+  "name": "domo-test-2",
+  "version": "1.0.0",
+  "description": "DOMO Frontend developer technical interview \u001b[1;3s#2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilescss": "npx sass src/styles/styles.scss styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arqPhenry/domo-test-2.git"
+  },
+  "keywords": [
+    "javascript",
+    "responsive",
+    "design",
+    "test",
+    "html",
+    "scss",
+    "sass",
+    "bootstrap",
+    "landing",
+    "page"
+  ],
+  "author": "Henry Navas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arqPhenry/domo-test-2/issues"
+  },
+  "homepage": "https://github.com/arqPhenry/domo-test-2#readme",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}

@@ -145,7 +145,7 @@ header nav li a button svg {
 .hero-section h1, .hero-section p {
   max-width: 50%;
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .hero-section h1, .hero-section p {
     max-width: 100%;
   }

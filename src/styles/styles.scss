@@ -100,7 +100,7 @@ header{
     margin-top: 49px;
     h1, p{
         max-width: 50%;
-        @media (max-width: 425px){
+        @media (max-width: 600px){
             max-width: 100%;
         }
     }

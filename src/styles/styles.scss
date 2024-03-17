@@ -13,6 +13,18 @@ body{
     background-repeat: no-repeat;
     background-position-x: right;
 
+
+    &::-webkit-scrollbar{
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(127, 127, 127, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(147, 153, 162, 0.3);
+        border-radius: 3px;	
+    }
+
     @media (max-width: 768px){
         background-size: 400px;
         background-position-y: 50px;
@@ -42,17 +54,16 @@ header{
     nav{
         z-index: 3;
         .navbar-toggler{
-            border: 1px solid $gris-texto-claro;
+            border: none;
             color: $gris-texto-claro;
             padding: 2px 4px;
             font-size: 14px;
             border-radius: 3px;
             svg{
-                transform: scale(0.7);
+                transform: scale(0.8);
             }
             &:focus{
-                outline: none;
-                border: 1px solid $gris-texto-claro;
+                box-shadow: none;
             }
         }
         .navbar-brand{
@@ -79,11 +90,6 @@ header{
                         margin: 0
                     }
                 }
-                &:active{
-                    button{
-                        color: white;
-                    }
-                }
             }
         }
     }
@@ -94,6 +100,9 @@ header{
     margin-top: 49px;
     h1, p{
         max-width: 50%;
+        @media (max-width: 425px){
+            max-width: 100%;
+        }
     }
 
     h1{
@@ -115,9 +124,6 @@ header{
     }
     @media (max-width: 425px){
         padding: 72px 0;
-        h1, p{
-            max-width: 100%;
-        }
     }
 
 }
@@ -275,26 +281,38 @@ header{
             }
             .images{
                 display: grid;
-                grid-template-columns: repeat(5, auto);
+                grid-template-columns: repeat(5, 1fr);
                 align-items: center;
-                gap: 24px;
+                gap: 120px;
                 width: 100%;
-                justify-content: space-between;
+                justify-content: space-evenly;
+
+                margin-top: 48px;
+                margin-bottom: 64px;
 
                 @media (max-width: 768px){
-                    gap: 12px;
+                    gap: 24px;
                 }
                 @media (max-width: 425px){
-                    gap: 12px;
-                    grid-template-rows: repeat(5, auto);
+                    grid-template-rows: repeat(5, 1fr);
                     grid-template-columns: auto;
                     justify-content: center;
                     margin-bottom: 24px;
+                    figure{
+                        max-width: 150px;
+                    }
                 }
 
                 figure{
-                    max-width: 150px;
+                    margin: 0;
+                    min-height: 54px;
+                    width: 100%;
+
+                    display: flex;
+                    align-items: center;
                     img{
+                        width: 100%;
+                        height: 100%;
                         max-width: 100%;
                     }
                 }
@@ -373,6 +391,9 @@ footer{
             list-style: none;
             padding: 0;
             padding-top: 12px;
+            @media (max-width: 767px){
+                text-align: center;
+            }
         }
         li{
             color: $gris-texto-claro;
@@ -396,10 +417,43 @@ footer{
             }
         }
 
+        .columna{
+            @media (max-width: 767px){
+                span, p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+
         .about{
+            @media (max-width: 767px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .credits{
+                color: $gris-texto-oscuro;
+                a{  
+                    color: $gris-texto-oscuro;
+                    transition: all 0.2s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
             div{
                 display: flex;
                 gap: 12px;
+                @media (max-width: 767px){
+                    align-items: center;
+                    justify-content: center;
+                }
                 figure{
                     max-width: 24px;
                     img{

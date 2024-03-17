@@ -115,14 +115,21 @@ header{
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 24px;
+
+        @media (max-width: 500px){
+            margin-bottom: 36px;       
+        }
     }
 
     .d-flex {
         gap: 18px;
     }
     @media (max-width: 500px){
+        margin-top: 78px;
+        margin-bottom: 78px;
         padding-top: 72px;
         padding-bottom: 96px;
+        
     }
 
 }

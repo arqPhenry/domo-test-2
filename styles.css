@@ -155,23 +155,11 @@ header nav li a button svg {
   font-size: 52px;
   line-height: 60px;
 }
-@media (max-width: 500px) {
-  .hero-section h1 {
-    font-size: 48px;
-    line-height: 60px;
-  }
-}
 .hero-section p {
   color: rgb(147, 153, 162);
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 24px;
-}
-@media (max-width: 500px) {
-  .hero-section p {
-    font-size: 16px;
-    line-height: 28px;
-  }
 }
 .hero-section .d-flex {
   gap: 18px;

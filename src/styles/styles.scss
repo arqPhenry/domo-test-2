@@ -120,8 +120,9 @@ header{
     .d-flex {
         gap: 18px;
     }
-    @media (max-width: 425px){
-        padding: 72px 0;
+    @media (max-width: 500px){
+        padding-top: 72px;
+        padding-bottom: 96px;
     }
 
 }

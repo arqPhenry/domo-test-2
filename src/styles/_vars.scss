@@ -1,5 +1,13 @@
-$azul-oscuro: rgba(40, 51, 69, 1);
+$azul-oscuro: rgb(40, 51, 69);
 $azul-claro: rgba(56, 113, 255, 1);
 $azul-texto-claro: rgba(155, 184, 255, 1);
 $gris-texto-claro: rgba(147, 153, 162, 1);
 $gris-texto-oscuro: rgba(127, 127, 127, 1);
+
+
+@font-face {
+    font-family: 'Circular STD';
+    src: url('./src/assets/circular-std-medium-500.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
